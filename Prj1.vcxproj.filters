@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Logic">
+      <UniqueIdentifier>{3f7a6f18-7689-4208-a9cb-be9a8c7f055b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Logic\C2DDraw">
+      <UniqueIdentifier>{d0cf0e3c-6fdb-4a4f-9481-66eb634b4ccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Logic\Lua">
+      <UniqueIdentifier>{9ed454e8-c560-4367-825e-3416c3a2b8d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Logic\Lua\Defs">
+      <UniqueIdentifier>{46d9130d-4843-4fcc-a2ae-65b0bcb0cf44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Logic\Lua\extra">
+      <UniqueIdentifier>{eadc74fc-0f7f-4b25-b74c-c85dd824d0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Logic">
+      <UniqueIdentifier>{979ffee2-9927-4947-931b-942bc8e5e990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Logic\C2DDraw">
+      <UniqueIdentifier>{68746f37-ae60-4f38-b64a-771b4a99cb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Logic\Lua">
+      <UniqueIdentifier>{e52a4670-116f-440d-b180-222a709d5d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Logic\Lua\Defs">
+      <UniqueIdentifier>{7bf5674c-d7fa-487d-9f94-6df16c75bc58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Logic\Lua\extra">
+      <UniqueIdentifier>{b3dd5c3b-ae7d-45e0-b5bf-e97982cb90b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\sdk">
+      <UniqueIdentifier>{dc0cbd47-ee29-4b64-9569-5a1e4c1f8765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Logic\Game">
+      <UniqueIdentifier>{4210670f-fd30-407d-8c1c-84c9ac2b831e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Logic\Game">
+      <UniqueIdentifier>{7ad90813-1906-416c-8c49-1e8c9715812d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="CGame.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\CDummy.cpp">
+      <Filter>Pliki źródłowe\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\C2DDraw.cpp">
+      <Filter>Pliki źródłowe\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Lua\CLuaMain.cpp">
+      <Filter>Pliki źródłowe\Logic\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Lua\Defs\CLuaDefsMain.cpp">
+      <Filter>Pliki źródłowe\Logic\Lua\Defs</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Lua\extra\CLuaArgument.cpp">
+      <Filter>Pliki źródłowe\Logic\Lua\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Lua\extra\CLuaArguments.cpp">
+      <Filter>Pliki źródłowe\Logic\Lua\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Lua\extra\CLuaFunctionRef.cpp">
+      <Filter>Pliki źródłowe\Logic\Lua\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Lua\Defs\CLua2DDrawDefs.cpp">
+      <Filter>Pliki źródłowe\Logic\Lua\Defs</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\C2DDraw\CRectangle.cpp">
+      <Filter>Pliki źródłowe\Logic\C2DDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Lua\extra\StringToEnumToString.cpp">
+      <Filter>Pliki źródłowe\Logic\Lua\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\CTexture.cpp">
+      <Filter>Pliki źródłowe\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\CWindow.cpp">
+      <Filter>Pliki źródłowe\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Game\CRenderer.cpp">
+      <Filter>Pliki źródłowe\Logic\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Game\CEntity.cpp">
+      <Filter>Pliki źródłowe\Logic\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Game\CCamera.cpp">
+      <Filter>Pliki źródłowe\Logic\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="StdInc.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\CWorld.cpp">
+      <Filter>Pliki źródłowe\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Game\CCollision.cpp">
+      <Filter>Pliki źródłowe\Logic\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Game\CTerrain.cpp">
+      <Filter>Pliki źródłowe\Logic\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Logic\CDummy.h">
+      <Filter>Pliki nagłówkowe\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\C2DDraw.h">
+      <Filter>Pliki nagłówkowe\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\CLuaMain.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\Defs\CLuaDefsMain.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua\Defs</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\CScriptArgReader.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\CStringMap.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\SString.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\extra\CLuaArguments.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\extra\CLuaArgument.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="StdInc.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="CGame.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\extra\CLuaFunctionRef.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\SharedUtil.Misc.h">
+      <Filter>Pliki nagłówkowe\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\SharedUtil.Misc.hpp">
+      <Filter>Pliki nagłówkowe\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\Defs\CLua2DDrawDefs.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua\Defs</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\C2DDraw\CRectangle.h">
+      <Filter>Pliki nagłówkowe\Logic\C2DDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Lua\extra\StringToEnumToString.h">
+      <Filter>Pliki nagłówkowe\Logic\Lua\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\CTexture.h">
+      <Filter>Pliki nagłówkowe\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\SharedUtil.HashMap.h">
+      <Filter>Pliki nagłówkowe\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\CWindow.h">
+      <Filter>Pliki nagłówkowe\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Game\CRenderer.h">
+      <Filter>Pliki nagłówkowe\Logic\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\CStructs.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Game\CEntity.h">
+      <Filter>Pliki nagłówkowe\Logic\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Game\CCamera.h">
+      <Filter>Pliki nagłówkowe\Logic\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\CWorld.h">
+      <Filter>Pliki nagłówkowe\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Game\CCollision.h">
+      <Filter>Pliki nagłówkowe\Logic\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Game\CTerrain.h">
+      <Filter>Pliki nagłówkowe\Logic\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

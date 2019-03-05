@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CGame.cpp" />
+    <ClCompile Include="Logic\C2DDraw.cpp" />
+    <ClCompile Include="Logic\C2DDraw\CRectangle.cpp" />
+    <ClCompile Include="Logic\CDummy.cpp" />
+    <ClCompile Include="Logic\CTexture.cpp" />
+    <ClCompile Include="Logic\CWindow.cpp" />
+    <ClCompile Include="Logic\CWorld.cpp" />
+    <ClCompile Include="Logic\Game\CCamera.cpp" />
+    <ClCompile Include="Logic\Game\CCollision.cpp" />
+    <ClCompile Include="Logic\Game\CEntity.cpp" />
+    <ClCompile Include="Logic\Game\CRenderer.cpp" />
+    <ClCompile Include="Logic\Game\CTerrain.cpp" />
+    <ClCompile Include="Logic\Lua\CLuaMain.cpp" />
+    <ClCompile Include="Logic\Lua\Defs\CLua2DDrawDefs.cpp" />
+    <ClCompile Include="Logic\Lua\Defs\CLuaDefsMain.cpp" />
+    <ClCompile Include="Logic\Lua\extra\CLuaArgument.cpp" />
+    <ClCompile Include="Logic\Lua\extra\CLuaArguments.cpp" />
+    <ClCompile Include="Logic\Lua\extra\CLuaFunctionRef.cpp" />
+    <ClCompile Include="Logic\Lua\extra\StringToEnumToString.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StdInc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGame.h" />
+    <ClInclude Include="Logic\C2DDraw.h" />
+    <ClInclude Include="Logic\C2DDraw\CRectangle.h" />
+    <ClInclude Include="Logic\CDummy.h" />
+    <ClInclude Include="Logic\CStructs.h" />
+    <ClInclude Include="Logic\CTexture.h" />
+    <ClInclude Include="Logic\CWindow.h" />
+    <ClInclude Include="Logic\CWorld.h" />
+    <ClInclude Include="Logic\Game\CCamera.h" />
+    <ClInclude Include="Logic\Game\CCollision.h" />
+    <ClInclude Include="Logic\Game\CEntity.h" />
+    <ClInclude Include="Logic\Game\CRenderer.h" />
+    <ClInclude Include="Logic\Game\CTerrain.h" />
+    <ClInclude Include="Logic\Lua\CLuaMain.h" />
+    <ClInclude Include="Logic\Lua\CScriptArgReader.h" />
+    <ClInclude Include="Logic\Lua\CStringMap.h" />
+    <ClInclude Include="Logic\Lua\Defs\CLua2DDrawDefs.h" />
+    <ClInclude Include="Logic\Lua\Defs\CLuaDefsMain.h" />
+    <ClInclude Include="Logic\Lua\extra\CLuaArgument.h" />
+    <ClInclude Include="Logic\Lua\extra\CLuaArguments.h" />
+    <ClInclude Include="Logic\Lua\extra\CLuaFunctionRef.h" />
+    <ClInclude Include="Logic\Lua\extra\StringToEnumToString.h" />
+    <ClInclude Include="Logic\Lua\SString.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="sdk\SharedUtil.HashMap.h" />
+    <ClInclude Include="sdk\SharedUtil.Misc.h" />
+    <ClInclude Include="sdk\SharedUtil.Misc.hpp" />
+    <ClInclude Include="StdInc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="I:\bullet3-master\build3\vs2010\BulletCollision.vcxproj">
+      <Project>{ca06abfe-4b60-f744-9ba9-ff589d3bc00d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="I:\bullet3-master\build3\vs2010\BulletDynamics.vcxproj">
+      <Project>{0d265c49-6e91-e748-ab1b-521735a78471}</Project>
+    </ProjectReference>
+    <ProjectReference Include="I:\bullet3-master\build3\vs2010\LinearMath.vcxproj">
+      <Project>{83682da3-df94-c744-965c-4ce3629d2877}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F987F9ED-929D-4E22-BE5D-9914D02D8AE8}</ProjectGuid>
+    <RootNamespace>Prj1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Prj1\vendor\GLFW\include;$(SolutionDir)Prj1\vendor\GLEW\include;$(SolutionDir)Prj1\vendor\GLUT;$(SolutionDir)Prj1\vendor;I:\bullet3-master\src;$(SolutionDir)Prj1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;SFML_DYNAMIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Prj1\StdInc.pch</PrecompiledHeaderOutputFile>
+      <MinimalRebuild>true</MinimalRebuild>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-audio-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-window-d.lib;Lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Prj1\vendor\GLFW\lib-vc2015;$(SolutionDir)Prj1\vendor\GLUT;$(SolutionDir)Prj1\vendor\GLEW\lib\Release\x64;$(SolutionDir)Prj1\vendor\SFML\lib;I:\bullet3-master\bin;$(SolutionDir)Prj1\vendor\lua\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Prj1\vendor\GLFW\include;$(SolutionDir)Prj1\vendor\GLEW\include;$(SolutionDir)Prj1\vendor\GLUT;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Prj1\vendor\GLFW\lib-vc2015;$(SolutionDir)Prj1\vendor\GLUT;$(SolutionDir)Prj1\vendor\GLEW\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;glu32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Prj1\vendor\GLFW\include;$(SolutionDir)Prj1\vendor\GLEW\include;$(SolutionDir)Prj1\vendor\GLUT;$(SolutionDir)Prj1\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glut32.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Prj1\vendor\GLFW\lib-vc2015;$(SolutionDir)Prj1\vendor\GLUT;$(SolutionDir)Prj1\vendor\GLEW\lib\Release\x64;$(SolutionDir)Prj1\vendor\SFML\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Prj1\vendor\GLFW\include;$(SolutionDir)Prj1\vendor\GLEW\include;$(SolutionDir)Prj1\vendor\GLUT;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Prj1\vendor\GLFW\lib-vc2015;$(SolutionDir)Prj1\vendor\GLUT;$(SolutionDir)Prj1\vendor\GLEW\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;glu32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
