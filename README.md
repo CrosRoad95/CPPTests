@@ -1,1 +1,1 @@
-https://www.w3schools.com/
+https://jsconsole.com/
