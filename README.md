@@ -1,2 +1,1 @@
-
-https://jsfiddle.net/
+https://www.w3schools.com/
